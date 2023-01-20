@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  border: none;
+  outline: none;
+  font-family: "Rouge Script", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.kit-Container {
+  padding: 10px;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  width: 60vw;
+  height: 80vh;
+  background-image: linear-gradient(
+    135deg,
+    red 5%,
+    #9a1663,
+    #e0144c,
+    #ff5858,
+    red
+  );
+  
+  box-shadow: 10px 10px 30px rgba(67, 66, 66, 0.9),
+    -10px -10px 30px rgba(67, 66, 66, 0.9), inset -10px -4px 30px ghostwhite,
+    inset 10px 4px 30px ghostwhite;
+}
+
+@media screen and (max-width: 768px){
+  .kit-Container {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  #kit {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem 0.5rem;
+    font-size: 3rem;
+    border-radius: 30px;
+  }
+  
+}
+
+.heading {
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/21/17/44/pink-2249403_960_720.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.kits {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  border-radius: 50px;
+  margin: 0.5rem 1rem;
+  font-size: 5rem;
+  background-color: transparent;
+}
+
+.a {
+  background-image: url("images/tom1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px 4px 30px ghostwhite, inset -10px -4px 30px ghostwhite;
+  cursor: pointer;
+}
+.s {
+  background-image: url("images/tom2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px 4px 16px ghostwhite, inset -10px -4px 16px ghostwhite;
+  cursor: pointer;
+}
+.d {
+  background-image: url("images/tom3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px 10px 30px #ac0d0d, inset -10px -10px 30px #ac0d0d;
+  cursor: pointer;
+}
+.f {
+  background-image: url("images/tom4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px 4px 30px #ac0d0d, inset -10px -4px 30px #ac0d0d;
+  cursor: pointer;
+}
+.g {
+  background-image: url("images/kick.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px -4px 30px black, inset -10px 4px 30px black;
+  cursor: pointer;
+}
+.h {
+  background-image: url("images/snare.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7),
+    inset 10px 4px 30px #ac0d0d, inset -10px -4px 30px #ac0d0d;
+  cursor: pointer;
+}
+.j {
+  background-image: url("images/crash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: inset 10px 4px 30px #ac0d0d, inset -10px 4px 30px #ac0d0d;
+  cursor: pointer;
+}
+.k {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/12/23/22/electric-guitar-1736291_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  box-shadow: inset 10px 4px 30px ghostwhite, inset -10px -4px 30px ghostwhite;
+  cursor: pointer;
+}
+
+.animation {
+  transform: scale(1.2);
+}
+
+
+
+/*clock */
+
+span {
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/27/17/54/leaf-1482948_960_720.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-weight: bolder;
+}
+
+/* bg animation*/
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  overflow: hidden;
+  position: absolute;
+  z-index: -10000;
+  width: 8px;
+  height: 8px;
+  background-image: radial-gradient(
+    135deg,
+    black, blue
+  );
+  box-shadow: inset -1px -1px 2px red, inset 1px 1px 2px ghostwhite;
+}
+
+.block:nth-child(1n + 1) {
+  border-radius: 25px;
+  
+  border: none;
+}
+.block:nth-child(2n + 2) {
+  border-radius: 25px;
+
+}
+.block:nth-child(3n + 3) {
+  border-radius: 25px;
+}
+.block:nth-child(4n + 3) {
+  border-radius: 25px;
+}
